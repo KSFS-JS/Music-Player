@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AddGroupNodeController">
+   <children>
+      <Pane prefHeight="100.0" prefWidth="600.0">
+         <children>
+            <TextField fx:id="nameField" prefHeight="60.0" prefWidth="600.0" promptText="Please enter the group name">
+               <font>
+                  <Font name="Calibri" size="24.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </TextField>
+            <Button fx:id="saveButton" layoutX="445.0" layoutY="65.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="63.0" text="Save">
+               <font>
+                  <Font name="Calibri" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="cancelButton" layoutX="535.0" layoutY="65.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="63.0" text="Cancel">
+               <font>
+                  <Font name="Calibri" size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

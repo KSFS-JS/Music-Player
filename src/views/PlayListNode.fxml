@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1150.0" stylesheets="@view.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.PlayListNodeController">
+   <children>
+      <VBox fillWidth="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1150.0" style="-fx-background-color: #303030;">
+         <children>
+            <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="1150.0" style="-fx-background-color: #303030;">
+               <children>
+                  <Label fx:id="nameLabel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="950.0" text="PlayListName" textFill="WHITE">
+                     <font>
+                        <Font name="Calibri" size="48.0" />
+                     </font>
+                     <padding>
+                        <Insets left="50.0" right="50.0" />
+                     </padding>
+                  </Label>
+                  <StackPane layoutX="1000.0" layoutY="140.0" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 15;">
+                     <children>
+                        <ImageView fx:id="addSong" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/addButton01.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                     </children>
+                  </StackPane>
+                  <StackPane layoutX="1080.0" layoutY="140.0" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 15;">
+                     <children>
+                        <ImageView fx:id="tablePlay" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <image>
+                              <Image url="@../assets/playButton01.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </StackPane>
+               </children>
+            </Pane>
+            <TableView fx:id="songTable" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="1150.0" style="-fx-background-color: #303030;">
+               <columns>
+                  <TableColumn fx:id="titleCol" editable="false" prefWidth="600.0" resizable="false" sortable="false" text="Title" />
+                  <TableColumn fx:id="artistCol" editable="false" prefWidth="300.0" resizable="false" sortable="false" text="Artist" />
+                  <TableColumn fx:id="durationCol" editable="false" prefWidth="250.0" resizable="false" sortable="false" text="Duration" />
+               </columns>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <contextMenu>
+                  <ContextMenu fx:id="menu">
+                    <items>
+                      <MenuItem mnemonicParsing="false" text="Delete" />
+                    </items>
+                  </ContextMenu>
+               </contextMenu>
+            </TableView>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

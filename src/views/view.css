@@ -1,0 +1,71 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+.table-view .column-header .label {
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 18px;
+    -fx-font-family: Calibri;
+}
+
+.table-view .column .label{
+	-fx-font-family: Calibri;
+}
+
+.table-view .column-header{
+	-fx-border-width: 1 1 1 1;
+}
+
+.table-row-cell:selected{
+    -fx-opacity: 0.3;
+}
+
+.table-view .virtual-flow .scroll-bar:vertical,
+.table-view .virtual-flow .scroll-bar:vertical .track,
+.table-view .virtual-flow .scroll-bar:vertical .track-background{
+    -fx-background-color: transparent;
+    -fx-min-width: 0;
+    -fx-pref-width: 0;
+    -fx-max-width: 0;
+
+    -fx-min-height: 0;
+    -fx-pref-height: 0;
+    -fx-max-height: 0;
+    
+    -fx-padding: 0 0 0 10;
+}
+
+.table-view .virtual-flow .scroll-bar:horizontal,
+.table-view .virtual-flow .scroll-bar:horizontal .track,
+.table-view .virtual-flow .scroll-bar:horizontal .track-background{
+	-fx-min-width: 0;
+    -fx-pref-width: 0;
+    -fx-max-width: 0;
+
+    -fx-min-height: 0;
+    -fx-pref-height: 0;
+    -fx-max-height: 0;
+    
+    -fx-padding: 10 0 0 0;
+}
+
+.list-view .virtual-flow .scroll-bar:vertical,
+.list-view .virtual-flow .scroll-bar:vertical .track,
+.list-view .virtual-flow .scroll-bar:vertical .track-background,
+.list-view .virtual-flow .scroll-bar:horizontal,
+.list-view .virtual-flow .scroll-bar:horizontal .track,
+.list-view .virtual-flow .scroll-bar:horizontal .track-background {
+    -fx-background-color: transparent;
+}
+
+.list-cell{
+	-fx-background-color: #303030;
+	-fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 18px;
+    -fx-font-family: Calibri;
+    -fx-alignment: center;
+    -fx-margin: 0 0 0 10;
+}
+
+.list-cell:selected{
+	-fx-opacity: 0.3;
+}
